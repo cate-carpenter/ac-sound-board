@@ -1,0 +1,138 @@
+/* Your Awesome Styling */
+
+body {
+  background-image: url("assets/AC_Cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: "Baloo Da 2", cursive;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+kbd {
+  display: inline-block;
+  height: 0.75em;
+  font-size: 5em;
+  font-family: "Fredoka One", cursive;
+  padding: 0.5em;
+}
+
+span {
+  display: inline-block;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 1.8em;
+  padding: 0.25em;
+}
+
+.card {
+  display: inline-block;
+  background-color: mediumseagreen;
+  text-align: center;
+  border-radius: 0.5em;
+  width: 15em;
+  height: 15em;
+  margin: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: 1s, 0.25s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+audio {
+  display: none;
+}
+
+div [data-key="71"] {
+  transition: 0.2s ease-in-out;
+  transition-duration: -0.5s;
+}
+
+div [data-key="71"]:active {
+  transform: scale(0.3);
+}
+
+div [data-key="70"] {
+  transition: 0.2s ease-in-out;
+}
+
+div [data-key="70"]:active {
+  opacity: 0;
+}
+
+div [data-key="69"] {
+  transition: 0.2s ease-in-out;
+}
+
+div [data-key="69"]:active {
+  transform: rotateZ(-40deg);
+}
+
+div [data-key="87"] {
+  transition: 0.2s ease-in-out;
+}
+
+div [data-key="87"]:active {
+  transform: scale(1.5);
+}
+
+div [data-key="79"] {
+  transition: 0.3s ease-in-out;
+}
+
+div [data-key="79"]:active {
+  transform: rotateZ(360deg);
+}
+
+div [data-key="83"]:active {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*source: https://css-tricks.com/snippets/css/shake-css-keyframe-animation/*/
+/*source #2: https://www.w3schools.com/howto/howto_css_shake_image.asp*/
+
+div [data-key="66"] {
+  transition: transform 0.1s;
+}
+
+div [data-key="66"]:active {
+  transform: translateY(-30px);
+}
+
+/* source = https://www.joshwcomeau.com/animation/css-transitions/ */
+
+div [data-key="84"] {
+  transition: transform 0.05s;
+}
+
+div [data-key="84"]:active {
+  transform: translateX(30px);
+}
